@@ -1,1 +1,5 @@
-<p>input-with-icon works!</p>
+<div class="flex items-center">
+  <input [type]="formOptions.type" [class]="[formOptions.direction, extraClass]" [placeholder]="formOptions.placeholder"
+    (keydown)="setText($event)" />
+  <span [class]="[formOptions.icon, formOptions.direction]"></span>
+</div>

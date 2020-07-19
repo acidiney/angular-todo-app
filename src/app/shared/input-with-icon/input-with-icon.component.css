@@ -1,0 +1,43 @@
+div {
+  position: relative;
+}
+
+input {
+  font-size: 1em;
+  padding: 10px;
+  box-sizing: border-box;
+  font-weight: lighter;
+}
+
+input::placeholder {
+  color: #666 !important;
+}
+
+input.left {
+  padding-left: 35px;
+}
+
+input.right {
+  padding-right: 25px;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #ddd;
+}
+
+span {
+  position: absolute;
+}
+
+span.left {
+  left: 0;
+}
+
+span.right {
+  left: 0;
+}
+
+span::before {
+  font-size: 2em;
+  color: #666;
+}

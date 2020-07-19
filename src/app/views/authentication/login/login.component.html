@@ -1,3 +1,9 @@
 <form>
-  <app-input-with-icon></app-input-with-icon>
+  <div class="input-group">
+    <app-input-with-icon
+      *ngFor="let input of formStruture; let i=index"
+      [formOptions]="input"
+      (inputEvent)="setText($event)"
+    ></app-input-with-icon>
+  </div>
 </form>
